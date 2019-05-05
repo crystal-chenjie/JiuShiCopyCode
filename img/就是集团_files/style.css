@@ -411,7 +411,7 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
 /* main */
 
 
-.index-header{position:absolute;top:-1px;left:0;width:100%;z-index:99;}
+.index-header{position:absolute;top:0;left:0;width:100%;z-index:99;}
 .index-header{position:fixed;}
 .index-header:after {
     width: 100%;
@@ -620,7 +620,7 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
     padding:5px 0 95px;
     background:url("../img/bg_moment.jpg")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/hm_ibg_2.jpg*/ center no-repeat;
 }
-.index-fc-con{margin-top:15px;}
+.index-fc-con{margin-top:85px;}
 .index-fc-txt h4{margin-top:0;}
 .index-fc-p{font-size:16px;line-height: 25px;margin:15px 0 45px;}
 .fc-more{padding:24px 0 0 8px;border-left:1px solid #000;position:relative;z-index:9;}
@@ -676,15 +676,15 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
 }
 .ft-nav dd a,.ft-nav dt a{color:#fff;}
 .ft-shart{margin-top: 20px;}
-.ft-shart a{display:inline-block;width:45px;height:45px;}
+.ft-shart a{display:inline-block;width:45px;height:45px;margin-right:10px;}
 .ft-shart a.ico-wb{background:url("../img/ico_wb.png")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_wb.png*/ center no-repeat;}
-.ft-shart a.ico-wx{background:url("../img/wechat.png")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_wx.png*/ center no-repeat;}
+.ft-shart a.ico-wx{background:url("../img/ico_wx.png")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_wx.png*/ center no-repeat;}
 .icp{
     background:#1e1e1e;
     text-align:center;
     color:#fff;
     padding:10px 0;
-    height: 60px;
+    height: 40px;
 }
 
 /* innermain */
@@ -1696,27 +1696,17 @@ video::-webkit-media-controls-enclosure {overflow:hidden;}video::-webkit-media-c
     width:570px;
     margin:0 auto;
 }
-@media (max-width: 767px){
-    .ft-select{
-        margin-top: 40px;
-    }
-}
-@media (min-width: 768px){
-    .ft-select{
-        margin-top: 14px;
-    }
-}
 /* background:url(../Images/form_bg.jpg);width:185px; */
 .ft-select-top{
     height:30px;
     line-height:30px;
     font-size:13px;
     color:#000;
-    border: 1px solid silver;
+    background:#fff;
 
     padding-left:5px;
 }
-.ft-select-top img{float:right;cursor:pointer;margin-top: 10px;margin-right: 5px;}
+.ft-select-top img{float:right;cursor:pointer;}
 .ft-select-top span{margin-right:5px;}
 .ft-select-list{position:relative;}
 .drop_list{

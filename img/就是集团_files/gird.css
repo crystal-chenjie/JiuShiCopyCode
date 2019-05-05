@@ -58,7 +58,7 @@
 	.footer-top{padding:15px 0;}
 	.ft-nav-wrap{padding:0;margin:0;border:0;}
 	.ft-shart,.inner-main .title-s1{margin-bottom:20px;}
-	.ft-shart a{width: 40px;height: 32px;background-size:cover!important;}
+	.ft-shart a{width: 30px;height: 30px;background-size:cover!important;}
 	.inner-tabs{margin-bottom:30px;}
 	.inner-tabs a{margin-right:15px;margin-left:15px;}
 	.location.text-right{text-align:left;margin-bottom:15px;}
@@ -192,7 +192,7 @@ margin-bottom:10px;
 .index-news-ul li + li{padding-top:10px;}
 .hmob-news-data{color:#666666;margin-bottom:5px;}
 .ft-tleft > div{float:left;}
-.ft-shart{margin-top:5px;}
+.ft-shart{margin-top:5px;margin-left:20px;}
 .fzlcswp{margin-top:25px;margin-bottom:25px;}
 
 .shzr-imgpop{display:none!important;}

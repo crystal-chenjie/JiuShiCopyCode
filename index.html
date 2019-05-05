@@ -40,12 +40,32 @@
             position: relative;
             height: 100%;
         }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+        }
     </style>
 
     <link rel="stylesheet" href="./css/bootstrap.css" >
     <link rel="stylesheet" href="./css/swiper.css" >
     <link rel="stylesheet" type="text/css" href="./css/public.css" >
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <!--// 动画效果css-->
+    <link rel="stylesheet" type="text/css" href="./css/index_cn.css" >
     <link rel="stylesheet" href="./css/gird.css" >
     <link rel="stylesheet" href="./css/animate.css" >
     <link rel="stylesheet" href="./css/jiushi-all.css">
@@ -192,7 +212,7 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <div style="width: 400px;height:200px ; margin: 0 auto;background-color:rgba(255,0,0,0.5);" >
+                                <div style="width: 400px;height:200px ; margin: 0 auto;background-color:rgba(255,0,0,0.8);" >
                                     <p style="text-align: left;font-size: 30px;">外滩楼宇保护计划<br></p>
                                     <p style="font-size:16px;text-decoration: none;line-height: 20px;text-align: left;">上海久事是整个外滩地区拥有经典楼宇数量最多的公司之一。多年来，公司坚持在保护中开发利用，重视挖掘和开发外滩楼宇深厚的历史沉淀和</p>
                                 </div>
@@ -329,9 +349,16 @@
 
 
 <div class="index-main">
-    <section class="index-page-1 ">
+    <!--业务板块-->
+    <div class="animatesv " style="animation-duration: 0.5s;animation-delay: 0.15s;margin-top: 30px"  amt="fadeInUpss">
+        <div class="title-s1 color-white">
+            <h3 style="text-align: center">业务板块</h3>
+            <h3 style="text-align: center;font-size: 18px;color: #cccccc"><br/>INDUSTRIES</h3>
+        </div>
+    </div>
+    <section class="index-page-1 hidden" style="margin-top: 20px;background-color: #cccccc">
         <div class="container container-lg">
-            <div class="index-row-1 row ">
+            <div class="index-row-1 row">
                 <div class="col-sm-7" style="z-index:9;">
                     <div class="index-video">
                         <div class="animatesv" amt="fadeInUpss" style="animation-duration: 1s;animation-delay: 0.15s;">
@@ -352,11 +379,12 @@
                 <div class="col-sm-5">
                     <div class="animatesv" amt="fadeInUpss" style="animation-duration: 1s;animation-delay: 0.5s;">
                         <div class="index-cpy">
+
                             <div class="zs-grop">
                                 <div class="zs-list" id="zsList">
                                     <div class="zs-list-item active" style="display: block;">
                                         <div class="overflowh">
-                                            <div class="font-36 zsAnmb" id="zTit" titleName="公司介绍">
+                                            <div class="font-36 zsAnmb" id="zsTit" titleName="公司介绍">
                                                 <div class="title-s1 color-white">
                                                     <!-- <h1>COMPANY INTRODUCTION</h1> -->
                                                     <h3>公司介绍</h3>
@@ -406,16 +434,116 @@
             </div>
         </div>
     </section>
-    <section class="index-page-2 hidden" >
-        <div class="container container-cg">
-            <div class="animatesv" style="animation-duration: 0.5s;animation-delay: 0.15s;"  amt="fadeInUpss">
-                <div class="title-s1 color-white">
-                    <!-- <h1>COMPANY NEWS</h1> -->
-                    <h3>新闻中心</h3>
-                    <div class="title-line"><span class="al" style="background:#000"></span><span class="ar"></span></div>
-                </div>
+    <section class="column_list_met_m1156_8_9 index-page-1 lazy " m-id="9" m-type="head_nav" data-title="" data-background="" style="margin-top: 20px;background-color: #e60012">
+        <div class="container container-lg">
+            <div class="skew-box skew1">
+                <ul>
+                    <li>
+                        <strong>
+                            <a  href="" title="有色金属" target='_self'>
+                                <i class="icon fa-diamond"></i>
+                                <h2>城市交通</h2>
+                                <b>METAL INDUST</b>
+                            </a>
+                        </strong>
+                        <font>
+                            <h1>城市交通</h1>
+                            <b>METAL INDUST</b>
+                            <p>霸伟股份有限公司致力于高档铜产品（铜管、铜棒、铜管接件、铜导体新材料、铜加工设备等）的研发、生产、销售和服务，于2018年1月在深圳证券交易所上市（股票代码123456）。</p>
+                            <a     href="" title="有色金属" target='_self'>查看详情</a>
+                        </font>
+                        <span>
+                    <img class="lazyload"  src="./img/01.jpg" data-original="./img/01.jpg" alt="有色金属">
+                    </span>
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="m1156ui011/product/product.php-class2=7.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=7" title="地产建设" target='_self'>
+                                <i class="icon fa-university"></i>
+                                <h2>体育产业</h2>
+                                <b>REAL ESTATE</b>
+                            </a>
+                        </strong>
+                        <font>
+                            <h1>体育产业</h1>
+                            <b>REAL ESTATE</b>
+                            <p>霸伟地产建设凭借高周转及成本领先、高品质为核心目标的全面精细化管理，追求有质量的稳定增长，从区域地产开发商一举成长为集地产开发、建筑施工及物业服务于一体的全国布局的综合性大型房企集团。</p>
+                            <a     href="m1156ui011/product/product.php-class2=7.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=7" title="地产建设" target='_self'>查看详情</a>
+                        </font>
+                        <span>
+                    <img class="lazyload" src="./img/02.jpg" data-original="./img/01.jpg" alt="地产建设">
+                </span>
+                    </li>
+                    <li>
+                        <strong>
+                            <a     href="m1156ui011/product/product.php-class2=8.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=8" title="生态农业" target='_self'>
+                                <i class="icon fa-pagelines"></i>
+                                <h2>地产置业</h2>
+                                <b>AGRICULTURE</b>
+                            </a>
+                        </strong>
+                        <font>
+                            <h1>地产置业</h1>
+                            <b>AGRICULTURE</b>
+                            <p>生态农业简称ECO，是按照生态学原理和经济学原理，运用现代科学技术成果和现代管理手段，以及传统农业的有效经验建立起来的，能获得较高的经济效益、生态效益和社会效益的现代化高效农业。</p>
+                            <a     href="m1156ui011/product/product.php-class2=8.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=8" title="生态农业" target='_self'>查看详情</a>
+                        </font>
+                        <span>
+                    <img class="lazyload" src="./img/03.jpg" data-original="./img/01.jpg" alt="生态农业">
+                </span>
+                    </li>
+                    <li>
+                        <strong>
+                            <a     href="m1156ui011/product/product.php-class2=12.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=12" title="产业金融" target='_self'>
+                                <i class="icon fa-line-chart"></i>
+                                <h2>资本经营</h2>
+                                <b>FINANCE SITE</b>
+                            </a>
+                        </strong>
+                        <font>
+                            <h1>资本经营</h1>
+                            <b>FINANCE SITE</b>
+                            <p>产业金融以霸伟集团财务有限责任公司、诸暨市海博小额贷款公司、中国霸伟融资租赁有限公司及参股宁夏银行、霸伟消费金融有限公司为核心，打造“类金融公司群”，力争成为金融细分领域的佼佼者。</p>
+                            <a  href="m1156ui011/product/product.php-class2=12.htm" tppabs="https://mb.mituo.cn/m1156ui011/product/product.php?class2=12" title="产业金融" target='_self'>查看详情</a>
+                        </font>
+                        <span>
+                    <img class="lazyload" src="./img/04.jpg" data-original="./img/01.jpg" alt="产业金融">
+                </span>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </section>
+   <!--集团动态-->
+    <div class="animatesv " style="animation-duration: 0.5s;animation-delay: 0.15s;margin-top: 40px"  amt="fadeInUpss">
+        <div class="title-s1 color-white">
+            <h3 style="text-align: center">集团动态</h3>
+            <h3 style="text-align: center;font-size: 18px;color: #cccccc"><br/>NEWS</h3>
+        </div>
+    </div>
+    <section class="index-page-2 " style="background-color: rgba(210,210,210,0.3)" >
+        <div class="container container-cg">
             <div class="index-news-con row">
+                <div class="col-sm-5 hidden-xs">
+                    <div class="index-news-rightlist">
+                        <ul>
+                            <li>
+                                <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+                                    <div><a href="info/news/id/1098.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1098"><img src="./img/5cb55518b9f0f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20190416/5cb55518b9f0f.jpg" alt="申能集团天然气全产业链惊艳亮相LNG2019"></a></div>
+                                    <h5><a href="info/news/id/1098.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1098">申能集团天然气全产业链惊艳亮相LNG2019  </a></h5>
+                                    <div class="datarg">2019-04-02</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+                                    <div><a href="info/news/id/1093.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1093"><img src="./img/5c78c92bb3f7f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20190301/5c78c92bb3f7f.jpg" alt="坚定信心 优化布局 谱写集团高质量发展新篇章——申能集团召开2019年度工作会议 全面部署2019年工作"></a></div>
+                                    <h5><a href="info/news/id/1093.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1093">坚定信心 优化布局 谱写集团高质量发展新篇章——申能集团召开2019年度工作会议 全面部署2019年工作  </a></h5>
+                                    <div class="datarg">2019-02-12</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="col-sm-7">
 
                     <ul class="index-news-ul">
@@ -496,1283 +624,36 @@
                         </li>
                     </ul>
                     <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                        <div class="more-s2"><a href="info/news/tid/610.htm" tppabs="http://www.shenergy.com.cn/info/news/tid/610" style="color:#fff;">查看更多</a></div>
-                    </div>
-                </div>
-                <div class="col-sm-5 hidden-xs">
-                    <div class="index-news-rightlist">
-                        <ul>
-
-                            <li>
-                                <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                                    <div><a href="info/news/id/1098.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1098"><img src="Uploads/20190416/5cb55518b9f0f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20190416/5cb55518b9f0f.jpg" alt="申能集团天然气全产业链惊艳亮相LNG2019"></a></div>
-                                    <h5><a href="info/news/id/1098.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1098">申能集团天然气全产业链惊艳亮相LNG2019  </a></h5>
-                                    <div class="datarg">2019-04-02</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                                    <div><a href="info/news/id/1093.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1093"><img src="Uploads/20190301/5c78c92bb3f7f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20190301/5c78c92bb3f7f.jpg" alt="坚定信心 优化布局 谱写集团高质量发展新篇章——申能集团召开2019年度工作会议 全面部署2019年工作"></a></div>
-                                    <h5><a href="info/news/id/1093.htm" tppabs="http://www.shenergy.com.cn/info/news/id/1093">坚定信心 优化布局 谱写集团高质量发展新篇章——申能集团召开2019年度工作会议 全面部署2019年工作  </a></h5>
-                                    <div class="datarg">2019-02-12</div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="more-s2"><a href="info/news/tid/610.htm" tppabs="http://www.shenergy.com.cn/info/news/tid/610" style="color:#e20413;float: right;">查看更多</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="index-page-3 hidden">
-        <div class="container container-cg">
-            <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                <div class="title-s1">
-
-                    <!-- <h1>OUR STAFF</h1> -->
-                    <h3>一线风采</h3>
-                    <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                </div>
-            </div>
-            <div class="index-fc-con">
-                <div class="index-fc-group">
-
-                    <div class="index-fc-item" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="./img/5b641b41b2574.jpg" tppabs="" alt="2018年7月20日上午7点57分接到申能集团应急指挥平台预警通知，当天8点30分晨会上，外二发电公司领导当即完成了相关部署。随后安环部第一时间落实公司及外包单位值班人员名单，并在公司主页上发布《关于进一步加强第10号台风“安比”期间应急值守的通知》。此时此刻，各个生产部门和后勤保障部门迎战“安比”准备工作全面铺开。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>电厂抗击台风“安比”纪实</h4>
-                                        <div class="index-fc-p">       2018年7月20日上午7点57分接到申能集团应急指挥平台预警通知，当天8点30分晨会上，外二发电公司领导当即完成了相关部署。随后安环部第一时间落实公司及外包单位值班人员名单，并在公司主页上发布《关于进一步加强第10号台风“安比”期间应急值守的通知》。此时此刻，各个生产部门和后勤保障部门迎战“安比”准备工作全面铺开。</div>
-                                        <div class="fc-more"><a href="info/news/id/971.htm" tppabs="http://www.shenergy.com.cn/info/news/id/971">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180724/5b56e19a15e16.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e19a15e16.jpg" alt="       申能电力科技创新引领行业发展，2017年控股电厂供电煤耗292克/千瓦时，较全国平均低18克/千瓦时，继续保持行业领先水平；系统燃煤电厂完成超低排放改造验收，各类指标均远低于国家排放标准，平均脱硫综合效率98%以上，大机组平均脱硝综合效率90%以上。外三电厂荣获全球清洁煤领导者奖。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>350MW高效洁净燃煤机组国家示范项目开工</h4>
-                                        <div class="index-fc-p">       申能电力科技创新引领行业发展，2017年控股电厂供电煤耗292克/千瓦时，较全国平均低18克/千瓦时，继续保持行业领先水平；系统燃煤电厂完成超低排放改造验收，各类指标均远低于国家排放标准，平均脱硫综合效率98%以上，大机组平均脱硝综合效率90%以上。外三电厂荣获全球清洁煤领导者奖。</div>
-                                        <div class="fc-more"><a href="info/news/id/745.htm" tppabs="http://www.shenergy.com.cn/info/news/id/745">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180724/5b56e173c4783.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e173c4783.jpg" alt="       上海市燃气供应安全稳固受控，2017年创出天然气日供应量3738万立方米历史新高；申城气、电联调确保运营可靠，并最大限度支援全国天然气供应。开展专项整治努力提高液化气用户端安全，全市累计整改5692户；建立天然气主干官网6个区的长效联络机制，及时消除地下管道占压96处，管线“杂散电流干预防护”列为上海市地方标准。城市燃气应急处置系统升级，全市应急站点增至36处。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>全力保障燃气安全供应</h4>
-                                        <div class="index-fc-p">       上海市燃气供应安全稳固受控，2017年创出天然气日供应量3738万立方米历史新高；申城气、电联调确保运营可靠，并最大限度支援全国天然气供应。开展专项整治努力提高液化气用户端安全，全市累计整改5692户；建立天然气主干官网6个区的长效联络机制，及时消除地下管道占压96处，管线“杂散电流干预防护”列为上海市地方标准。城市燃气应急处置系统升级，全市应急站点增至36处。</div>
-                                        <div class="fc-more"><a href="info/news/id/747.htm" tppabs="http://www.shenergy.com.cn/info/news/id/747">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180724/5b56e14fa4aa7.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e14fa4aa7.jpg" alt="       继续深化上海“智慧燃气”建设，开发完成燃气大数据分析应用平台。“智能管网”完成GIS平台一期和管网压力检测系统； “智能调度”升级调度信息系统和应急处置系统；“智能服务”实现上海市政府实事项目目标，截至2017年底，燃气民用无线智能表达288万台，气、电、水“三表合抄”完成近31万户。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>上海燃气调度中心</h4>
-                                        <div class="index-fc-p">       继续深化上海“智慧燃气”建设，开发完成燃气大数据分析应用平台。“智能管网”完成GIS平台一期和管网压力检测系统； “智能调度”升级调度信息系统和应急处置系统；“智能服务”实现上海市政府实事项目目标，截至2017年底，燃气民用无线智能表达288万台，气、电、水“三表合抄”完成近31万户。</div>
-                                        <div class="fc-more"><a href="info/news/id/748.htm" tppabs="http://www.shenergy.com.cn/info/news/id/748">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180724/5b56e11c9422c.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e11c9422c.jpg" alt="       燃气品牌和服务形象明显提升，居民燃气业务办理纳入第一批上海市市级当场办结事项，第三方服务测评指数跨入对标企业先进行列。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>上海燃气营业服务窗口</h4>
-                                        <div class="index-fc-p">       燃气品牌和服务形象明显提升，居民燃气业务办理纳入第一批上海市市级当场办结事项，第三方服务测评指数跨入对标企业先进行列。</div>
-                                        <div class="fc-more"><a href="info/news/id/749.htm" tppabs="http://www.shenergy.com.cn/info/news/id/749">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180725/5b57d1fce0927.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180725/5b57d1fce0927.jpg" alt="       申能电力科技公司依托外三发电先进技术，为国内外电力企业提供整套节能优化解决方案和技术服务，电厂节能创新技术行业领先，先后与神华、大唐、华润等成功实施煤电改造项目。2017年公司改制为混合所有制，市场开拓加快推进。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>申能科技公司曹妃甸节能项目开工</h4>
-                                        <div class="index-fc-p">       申能电力科技公司依托外三发电先进技术，为国内外电力企业提供整套节能优化解决方案和技术服务，电厂节能创新技术行业领先，先后与神华、大唐、华润等成功实施煤电改造项目。2017年公司改制为混合所有制，市场开拓加快推进。</div>
-                                        <div class="fc-more"><a href="info/news/id/750.htm" tppabs="http://www.shenergy.com.cn/info/news/id/750">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-fc-item" style="display:none;" >
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div>
-                                    <div class="text"><img src="Uploads/20180724/5b56e0a07a79f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e0a07a79f.jpg" alt="       申欣环保实业公司市上海市环保第三方治理的骨干企业，国家环保部脱硫脱硝运营上岗培训基地和氮氧化物减排核查培训基地。2017年，公司不断加快脱硫脱硝运营业务拓展，自主研发成功“多参数环境空气检测仪”，非道路扬尘监测设备累计安装达到230个点位；获得自动监控系统运行服务能力认证一级资质。"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div>
-                                    <div class="index-fc-txt">
-                                        <h4>申欣环保在线监测系统</h4>
-                                        <div class="index-fc-p">       申欣环保实业公司市上海市环保第三方治理的骨干企业，国家环保部脱硫脱硝运营上岗培训基地和氮氧化物减排核查培训基地。2017年，公司不断加快脱硫脱硝运营业务拓展，自主研发成功“多参数环境空气检测仪”，非道路扬尘监测设备累计安装达到230个点位；获得自动监控系统运行服务能力认证一级资质。</div>
-                                        <div class="fc-more"><a href="info/news/id/751.htm" tppabs="http://www.shenergy.com.cn/info/news/id/751">了解更多</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="index-fc-imgs">
-                    <div class="row">
-                        <div class="col-sm-5"></div>
-                        <div class="col-sm-7">
-                            <div class="fc-imgswp">
-                                <div class="swiper-container" id="fcswp">
-                                    <div class="swiper-wrapper">
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="img/5b641b41b2574.jpg" tppabs="" alt="电厂抗击台风“安比”纪实"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180724/5b56e19a15e16.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e19a15e16.jpg" alt="350MW高效洁净燃煤机组国家示范项目开工"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180724/5b56e173c4783.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e173c4783.jpg" alt="全力保障燃气安全供应"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180724/5b56e14fa4aa7.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e14fa4aa7.jpg" alt="上海燃气调度中心"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180724/5b56e11c9422c.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e11c9422c.jpg" alt="上海燃气营业服务窗口"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180725/5b57d1fce0927.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180725/5b57d1fce0927.jpg" alt="申能科技公司曹妃甸节能项目开工"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="fc-imgswp-item">
-                                                <div><img src="Uploads/20180724/5b56e0a07a79f.jpg" tppabs="http://www.shenergy.com.cn/Uploads//20180724/5b56e0a07a79f.jpg" alt="申欣环保在线监测系统"></div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="fc-pages">
-                                    <div class="fc-prev"></div>
-                                    <div class="fc-next"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--精彩瞬间-->
+    <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+        <div class="title-s1">
+            <h3 style="text-align: center;margin-top: 40px">精彩瞬间</h3>
+            <h3 style="text-align: center;font-size: 18px;color: #cccccc"><br/>MOMENTS</h3>
         </div>
-    </section>
-    <section class="index-page-4 hidden-xs p4tsj" style="min-width: 1000px;">
-        <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-            <div class="swiper-container" id="hmywgl">
+    </div>
+    <section class="index-page-3" style="background-color: rgba(210,210,210,0.3);margin-top: 30px">
+        <div class="container container-cg swiper-container" id="sw" >
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide hmywgl-s-3">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1>POWER INDUSTRY</h1> -->
-                                        <h3>电力产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                    <div class="text fadeInUp anm-d2">
-                                        截止到2017年底，公司投资建成电力项目32个，遍布沪、浙、苏、皖、蒙、宁等多地，建成权益装机容量944万千瓦，控股装机容量904万千瓦，占上海市总装机容量的30%左右。2017年公司投资电厂权益发电量343亿千瓦时，同比增加15.6 %；控股发电量356亿千瓦时，同比增加19.7%；外三电厂全年发电量继续保持全市第一。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/608.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/608">了解更多</a></div>
-                                </div>
-                            </div>
-                            <div class="text fadeInUp anm-d2" style="animation-delay:1s;">
-                                <img src="img/img_hmdls.png"  style="width:auto;" alt="">
-                            </div>
-                        </div>
-                        <div class="hm-p4a-list">
-                            <ul>
-                                <li class="hmbus-1">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/586.htm" tppabs="http://www.shenergy.com.cn/info/business/id/586">启东风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qidong Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-2">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/587.htm" tppabs="http://www.shenergy.com.cn/info/business/id/587">崇明燃气发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Chongming Gas Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-3">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1000.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1000">青草沙风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qingcaosha Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-4">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/999.htm" tppabs="http://www.shenergy.com.cn/info/business/id/999">长兴风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Changxing Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-5">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/591.htm" tppabs="http://www.shenergy.com.cn/info/business/id/591">外高桥第三发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao No.3 Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-6">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/592.htm" tppabs="http://www.shenergy.com.cn/info/business/id/592">外高桥第二发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao No.2 Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-7">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/593.htm" tppabs="http://www.shenergy.com.cn/info/business/id/593">外高桥发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao Power Plant </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-8">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/590.htm" tppabs="http://www.shenergy.com.cn/info/business/id/590">华能燃机发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huaneng Gas Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-9">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/486.htm" tppabs="http://www.shenergy.com.cn/info/business/id/486">华能石洞口二期扩建</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huaneng Shidongkou Project Phase II Expansion</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-10">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/594.htm" tppabs="http://www.shenergy.com.cn/info/business/id/594">世博太阳能光伏电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">World Expo Solar Photovoltaic Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-11">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1001.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1001">华港风电一期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">China Wind Power one Period</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-12">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1002.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1002">华港风电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">China Wind Power two Period</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-13">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1003.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1003">临港海上风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-14">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1004.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1004">临港海上风电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power II</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-15">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/599.htm" tppabs="http://www.shenergy.com.cn/info/business/id/599">临港风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-16">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/600.htm" tppabs="http://www.shenergy.com.cn/info/business/id/600">临港太阳能</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Solar Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-17">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/601.htm" tppabs="http://www.shenergy.com.cn/info/business/id/601">临港燃气发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Gas Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-18">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/602.htm" tppabs="http://www.shenergy.com.cn/info/business/id/602">星火热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Xinghuo Thermal Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-19">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="">华电南桥热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huadian Nanqiao Thermai Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-20">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/596.htm" tppabs="http://www.shenergy.com.cn/info/business/id/596">吴泾第二发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wujing No.2 Power Plant </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-21">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/595.htm" tppabs="http://www.shenergy.com.cn/info/business/id/595">吴泾发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wujing Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-22">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/598.htm" tppabs="http://www.shenergy.com.cn/info/business/id/598">奉贤热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Fengxian Thermal Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-23">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/603.htm" tppabs="http://www.shenergy.com.cn/info/business/id/603">漕泾热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Caojing Thermal Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-24">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/604.htm" tppabs="http://www.shenergy.com.cn/info/business/id/604">漕泾发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Caojing Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-25">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/606.htm" tppabs="http://www.shenergy.com.cn/info/business/id/606">秦山核电三期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qinshan Nuclear Power Plant Phase III </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-26">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/607.htm" tppabs="http://www.shenergy.com.cn/info/business/id/607">秦山核电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qinshan Nuclear Power Plant Phase II</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-27">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/608.htm" tppabs="http://www.shenergy.com.cn/info/business/id/608">桐柏抽水蓄能电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Tongbai Pumped Storage Power Station</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-28">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/605.htm" tppabs="http://www.shenergy.com.cn/info/business/id/605">天荒坪抽水蓄能电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Tianhuangping Pumped Storage Power Station</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-29">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/970.htm" tppabs="http://www.shenergy.com.cn/info/business/id/970">青浦热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="info/business/id/970.htm" tppabs="http://www.shenergy.com.cn/info/business/id/970">Qinpu Thermai Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-30">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/584.htm" tppabs="http://www.shenergy.com.cn/info/business/id/584">达茂风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Damao Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-31">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/585.htm" tppabs="http://www.shenergy.com.cn/info/business/id/585">平山发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Pingshan Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-32">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/965.htm" tppabs="http://www.shenergy.com.cn/info/business/id/965">吴忠热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wuzhong Power</a>
-                                        </p>
-                                    </div>
-                                </li>                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide hmywgl-s-2">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1> GAS INDUSTRY</h1> -->
-                                        <h3> 燃气产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                    <div class="text fadeInUp anm-d2">
-                                        申能构建生产采购、管网输配、销售供应为一体的完整的燃气产业链，形成上海市“6+1”（西气一线、二线、进口LNG、川气、东海气、江苏如东及五号沟应急储备）天然气多气源保障体系。<br>
-                                        2017年公司天然气经营规模80.6亿立方米，燃气供应占上海市场的90%以上份额；截至2017年底，公司拥有燃气用户680万户，地下管线超过2.3万公里。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/607.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/607">了解更多</a></div>
-                                </div>
-                            </div>
-                            <div style="margin-top:50px;">
-                                <div class="text fadeInUp anm-d2" style="animation-delay:1s;">
-                                    <img src="Application/Home/View/Static/Images/img_gas.png" tppabs="http://www.shenergy.com.cn/Application/Home/View/Static/Images/img_gas.png" style="width:auto;" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide hmywgl-s-1">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1>FINANCIAL INDUSTRY</h1> -->
-                                        <h3>金融产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="hmywgl-g-1 fadeInUp anm-d1">
-                                        <h3>优化金融布局深化产融结合</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text" style="">
-                                <div class="fadeInUp anm-d2">
-                                    <p>
-                                        公司金融产业涉及证券、保险、银行等多个领域，投资了东方证券，太平洋保险、申能财务公司、诚毅投资、光大银行等多家金融企业。截至2017年底，公司金融资产市值达872.8亿元，资产证券化率超过80%。2017年公司制定产融结合专项规划，促进金融服务实体。燃气集团、东方证券、财务公司合作举办“1117燃气狂欢”、推出“绿色分期付”；东方证券与能创公司合作设立申能东方能源研究所，申能燃料与东证期货合作完成动力煤期货首笔套保交易。
-                                    </p>
-                                </div>
-                                <div class="more-s2 fadeInUp anm-d3">
-                                    <a href="info/business/tid/412.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/412">了解更多</a>
-                                </div>
-                                <div class="fadeInUp anm-d3" style="position:relative;">
-                                    <img src="Public/kindeditor/attached/image/20180912/20180912161304_58999.png" tppabs="http://www.shenergy.com.cn/Public/kindeditor/attached/image/20180912/20180912161304_58999.png" alt="" />
-                                    <dl class="hmp4dl">
-                                        <dt>
-                                            申能集团部分持股公司列举
-                                        </dt>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-1"></i><a href="info/business/id/663.htm" tppabs="http://www.shenergy.com.cn/info/business/id/663" title="东方证券股份有限公司">东方证券股份有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-2"></i><a href="info/business/id/665.htm" tppabs="http://www.shenergy.com.cn/info/business/id/665" title="申能集团财务有限公司">申能集团财务有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-3"></i><a href="info/business/id/950.htm" tppabs="http://www.shenergy.com.cn/info/business/id/950" title="上海久联集团有限公司">上海久联集团有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-4"></i><a href="info/business/id/664.htm" tppabs="http://www.shenergy.com.cn/info/business/id/664" title="上海申能诚毅股权投资有限公司">上海申能诚毅股权投资有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-5"></i><a href="info/business/id/666.htm" tppabs="http://www.shenergy.com.cn/info/business/id/666" title="中国太平洋保险（集团）股份有限公司(申能集团为第二大股东)">中国太平洋保险（集团）股份有限公司(申能集团为第二大股东)</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-6"></i><a href="javascript:if(confirm('http://www.cebbank.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cebbank.com/'" tppabs="http://www.cebbank.com/" target="_blank" title="光大银行">光大银行</a>
-                                        </dd>
-                                    </dl>
-                                </div>                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide hmywgl-s-4">
-                        <div class="container container-cg">
-                            <div class="title-s1 color-white fadeInUp anm-d1">
-                                <!-- <h1> SERVICE &amp; TRADE IN ENERGY INDUSTY</h1> -->
-                                <h3>能源服务与贸易产业 </h3>
-                                <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-5">
-
-                                    <div class="text fadeInUp anm-d2">
-                                        公司不断延伸能源产业链，在能源服务领域培育形成一批拥有核心技术、具有良好发展前景的新兴企业，成为公司转型发展的重要平台。公司整合资源构建能源贸易平台，能源贸易产业链不断延伸。油气仓储、煤炭贸易、能源运输、天然气贸易等市场化步伐不断加快。油品仓储实现提速增效。石洞口能源储运基地规划归申能所属久联集团，油、气存储能力27.2万立方米，是集储存、装卸、水陆发运为一体的能源储运库区，2017年油品仓储量超过116万吨，同比增长6.5%。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/350.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/350">了解更多</a></div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="text-right imgwauto fadeInUp anm-d2"><img src="Uploads/20180801/5b617ad208b36.png" tppabs="http://www.shenergy.com.cn/Uploads//20180801/5b617ad208b36.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="hmywglpage"></div> -->
-                <div class="sm-prev"></div>
-                <div class="sm-next"></div>
+                    <div class="swiper-slide"><img src="./img/pic1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/pic8.jpg" alt=""></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-    </section>
-    <section class="index-page-4 hidden-xs p4bjb" style="min-width: 1000px;">
-        <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-            <div class="swiper-container" id="hmywgl2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide hmywgl-s-3">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1>POWER INDUSTRY</h1> -->
-                                        <h3>电力产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                    <div class="text fadeInUp anm-d2">
-                                        截止到2017年底，公司投资建成电力项目32个，遍布沪、浙、苏、皖、蒙、宁等多地，建成权益装机容量944万千瓦，控股装机容量904万千瓦，占上海市总装机容量的30%左右。2017年公司投资电厂权益发电量343亿千瓦时，同比增加15.6 %；控股发电量356亿千瓦时，同比增加19.7%；外三电厂全年发电量继续保持全市第一。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/608.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/608">了解更多</a></div>
-                                </div>
-                            </div>
-                            <div class="text fadeInUp anm-d2" style="animation-delay:1s;">
-                                <div class="row">
-                                    <div class="col-sm-4"><img src="Application/Home/View/Static/Images/img_hmdls.png" tppabs="http://www.shenergy.com.cn/Application/Home/View/Static/Images/img_hmdls.png" style="width:auto;" alt=""></div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="hm-p4a-list">
-                            <ul>
-                                <li class="hmbus-1">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/586.htm" tppabs="http://www.shenergy.com.cn/info/business/id/586">启东风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qidong Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-2">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/587.htm" tppabs="http://www.shenergy.com.cn/info/business/id/587">崇明燃气发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Chongming Gas Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-3">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1000.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1000">青草沙风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qingcaosha Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-4">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/999.htm" tppabs="http://www.shenergy.com.cn/info/business/id/999">长兴风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Changxing Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-5">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/591.htm" tppabs="http://www.shenergy.com.cn/info/business/id/591">外高桥第三发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao No.3 Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-6">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/592.htm" tppabs="http://www.shenergy.com.cn/info/business/id/592">外高桥第二发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao No.2 Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-7">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/593.htm" tppabs="http://www.shenergy.com.cn/info/business/id/593">外高桥发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Waigaoqiao Power Plant </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-8">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/590.htm" tppabs="http://www.shenergy.com.cn/info/business/id/590">华能燃机发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huaneng Gas Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-9">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/486.htm" tppabs="http://www.shenergy.com.cn/info/business/id/486">华能石洞口二期扩建</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huaneng Shidongkou Project Phase II Expansion</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-10">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/594.htm" tppabs="http://www.shenergy.com.cn/info/business/id/594">世博太阳能光伏电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">World Expo Solar Photovoltaic Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-11">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1001.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1001">华港风电一期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">China Wind Power one Period</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-12">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1002.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1002">华港风电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">China Wind Power two Period</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-13">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1003.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1003">临港海上风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-14">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/1004.htm" tppabs="http://www.shenergy.com.cn/info/business/id/1004">临港海上风电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power II</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-15">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/599.htm" tppabs="http://www.shenergy.com.cn/info/business/id/599">临港风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Offshore Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-16">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/600.htm" tppabs="http://www.shenergy.com.cn/info/business/id/600">临港太阳能</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Solar Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-17">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/601.htm" tppabs="http://www.shenergy.com.cn/info/business/id/601">临港燃气发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Lingang Gas Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-18">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/602.htm" tppabs="http://www.shenergy.com.cn/info/business/id/602">星火热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Xinghuo Thermal Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-19">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="">华电南桥热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Huadian Nanqiao Thermai Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-20">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/596.htm" tppabs="http://www.shenergy.com.cn/info/business/id/596">吴泾第二发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wujing No.2 Power Plant </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-21">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/595.htm" tppabs="http://www.shenergy.com.cn/info/business/id/595">吴泾发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wujing Power Plant</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-22">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/598.htm" tppabs="http://www.shenergy.com.cn/info/business/id/598">奉贤热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Fengxian Thermal Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-23">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/603.htm" tppabs="http://www.shenergy.com.cn/info/business/id/603">漕泾热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Caojing Thermal Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-24">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/604.htm" tppabs="http://www.shenergy.com.cn/info/business/id/604">漕泾发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Caojing Power </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-25">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/606.htm" tppabs="http://www.shenergy.com.cn/info/business/id/606">秦山核电三期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qinshan Nuclear Power Plant Phase III </a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-26">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/607.htm" tppabs="http://www.shenergy.com.cn/info/business/id/607">秦山核电二期</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Qinshan Nuclear Power Plant Phase II</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-27">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/608.htm" tppabs="http://www.shenergy.com.cn/info/business/id/608">桐柏抽水蓄能电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Tongbai Pumped Storage Power Station</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-28">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/605.htm" tppabs="http://www.shenergy.com.cn/info/business/id/605">天荒坪抽水蓄能电站</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Tianhuangping Pumped Storage Power Station</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-29">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/970.htm" tppabs="http://www.shenergy.com.cn/info/business/id/970">青浦热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="info/business/id/970.htm" tppabs="http://www.shenergy.com.cn/info/business/id/970">Qinpu Thermai Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-30">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/584.htm" tppabs="http://www.shenergy.com.cn/info/business/id/584">达茂风电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Damao Wind Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-31">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/585.htm" tppabs="http://www.shenergy.com.cn/info/business/id/585">平山发电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Pingshan Power</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="hmbus-32">
-                                    <div class="hm-busipop">
-                                        <h5>
-                                            <a href="info/business/id/965.htm" tppabs="http://www.shenergy.com.cn/info/business/id/965">吴忠热电</a>
-                                        </h5>
-                                        <p>
-                                            <a href="">Wuzhong Power</a>
-                                        </p>
-                                    </div>
-                                </li>                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide hmywgl-s-2">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1> GAS INDUSTRY</h1> -->
-                                        <h3> 燃气产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                    <div class="text fadeInUp anm-d2">
-                                        申能构建生产采购、管网输配、销售供应为一体的完整的燃气产业链，形成上海市“6+1”（西气一线、二线、进口LNG、川气、东海气、江苏如东及五号沟应急储备）天然气多气源保障体系。<br>
-                                        2017年公司天然气经营规模80.6亿立方米，燃气供应占上海市场的90%以上份额；截至2017年底，公司拥有燃气用户680万户，地下管线超过2.3万公里。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/607.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/607">了解更多</a></div>
-                                </div>
-                            </div>
-                            <div style="margin-top:20px;">
-                                <div class="text fadeInUp anm-d2" style="animation-delay:1s;">
-
-                                    <div class="row">
-                                        <div class="col-sm-4"><img src="Application/Home/View/Static/Images/img_gas.png" tppabs="http://www.shenergy.com.cn/Application/Home/View/Static/Images/img_gas.png" style="width:auto;" alt=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide hmywgl-s-1">
-                        <div class="container container-cg">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="title-s1 color-white fadeInUp anm-d1">
-                                        <!-- <h1>FINANCIAL INDUSTRY</h1> -->
-                                        <h3>金融产业</h3>
-                                        <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="hmywgl-g-1 fadeInUp anm-d1">
-                                        <h3>优化金融布局深化产融结合</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text" style="">
-                                <div class="fadeInUp anm-d2">
-                                    <p>
-                                        公司金融产业涉及证券、保险、银行等多个领域，投资了东方证券，太平洋保险、申能财务公司、诚毅投资、光大银行等多家金融企业。截至2017年底，公司金融资产市值达872.8亿元，资产证券化率超过80%。2017年公司制定产融结合专项规划，促进金融服务实体。燃气集团、东方证券、财务公司合作举办“1117燃气狂欢”、推出“绿色分期付”；东方证券与能创公司合作设立申能东方能源研究所，申能燃料与东证期货合作完成动力煤期货首笔套保交易。
-                                    </p>
-                                </div>
-                                <div class="more-s2 fadeInUp anm-d3">
-                                    <a href="info/business/tid/412.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/412">了解更多</a>
-                                </div>
-                                <div class="fadeInUp anm-d3" style="position:relative;">
-                                    <img src="Public/kindeditor/attached/image/20180912/20180912161304_58999.png" tppabs="http://www.shenergy.com.cn/Public/kindeditor/attached/image/20180912/20180912161304_58999.png" alt="" />
-                                    <dl class="hmp4dl">
-                                        <dt>
-                                            申能集团部分持股公司列举
-                                        </dt>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-1"></i><a href="info/business/id/663.htm" tppabs="http://www.shenergy.com.cn/info/business/id/663" title="东方证券股份有限公司">东方证券股份有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-2"></i><a href="info/business/id/665.htm" tppabs="http://www.shenergy.com.cn/info/business/id/665" title="申能集团财务有限公司">申能集团财务有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-3"></i><a href="info/business/id/950.htm" tppabs="http://www.shenergy.com.cn/info/business/id/950" title="上海久联集团有限公司">上海久联集团有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-4"></i><a href="info/business/id/664.htm" tppabs="http://www.shenergy.com.cn/info/business/id/664" title="上海申能诚毅股权投资有限公司">上海申能诚毅股权投资有限公司</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-5"></i><a href="info/business/id/666.htm" tppabs="http://www.shenergy.com.cn/info/business/id/666" title="中国太平洋保险（集团）股份有限公司(申能集团为第二大股东)">中国太平洋保险（集团）股份有限公司(申能集团为第二大股东)</a>
-                                        </dd>
-                                        <dd>
-                                            <i class="hmicos4 hmicolor-6"></i><a href="javascript:if(confirm('http://www.cebbank.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cebbank.com/'" tppabs="http://www.cebbank.com/" target="_blank" title="光大银行">光大银行</a>
-                                        </dd>
-                                    </dl>
-                                </div>                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide hmywgl-s-4">
-                        <div class="container container-cg">
-                            <div class="title-s1 color-white fadeInUp anm-d1">
-                                <!-- <h1> SERVICE &amp; TRADE IN ENERGY INDUSTY</h1> -->
-                                <h3>能源服务与贸易产业 </h3>
-                                <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-5">
-
-                                    <div class="text fadeInUp anm-d2">
-                                        公司不断延伸能源产业链，在能源服务领域培育形成一批拥有核心技术、具有良好发展前景的新兴企业，成为公司转型发展的重要平台。公司整合资源构建能源贸易平台，能源贸易产业链不断延伸。油气仓储、煤炭贸易、能源运输、天然气贸易等市场化步伐不断加快。油品仓储实现提速增效。石洞口能源储运基地规划归申能所属久联集团，油、气存储能力27.2万立方米，是集储存、装卸、水陆发运为一体的能源储运库区，2017年油品仓储量超过116万吨，同比增长6.5%。                                    </div>
-                                    <div class="more-s2 fadeInUp anm-d3"><a href="info/business/tid/350.htm" tppabs="http://www.shenergy.com.cn/info/business/tid/350">了解更多</a></div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="text-right imgwauto fadeInUp anm-d2"><img src="Uploads/20180801/5b617ad208b36.png" tppabs="http://www.shenergy.com.cn/Uploads//20180801/5b617ad208b36.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="hmywglpage"></div> -->
-                <div class="sm-prev"></div>
-                <div class="sm-next"></div>
-            </div>
-        </div>
-    </section>
-    <section class="index-page-5">
-        <div class="container container-cg">
-            <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                <div class="title-s1">
-
-                    <!--   <h1>Shenergy data</h1> -->
-                    <h3>数据申能</h3>
-                    <div class="title-line"><span class="al"></span><span class="ar"></span></div>
-                </div>
-            </div>
-            <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                <div class="hmpartner swiper-container" id="hmpartner">
-                    <div class="swiper-wrapper">
-
-
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c59b259e6.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c59b259e6.png" alt="总资产"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>1756</span>亿元</div>
-                                        <div class="hmpt2">总资产<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c595bf5fa.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c595bf5fa.png" alt="营业总收入"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>384</span>亿元</div>
-                                        <div class="hmpt2">营业总收入<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c647cef78.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c647cef78.png" alt="利润总额"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>62.3</span>亿元</div>
-                                        <div class="hmpt2">利润总额<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c6304b886.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c6304b886.png" alt="金融资产市值"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>872.8</span>亿元</div>
-                                        <div class="hmpt2">金融资产市值<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c55a95830.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c55a95830.png" alt="权益装机容量"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>944</span>万千瓦</div>
-                                        <div class="hmpt2">权益装机容量<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c5295ea21.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c5295ea21.png" alt="控股装机容量"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>904</span>万千瓦</div>
-                                        <div class="hmpt2">控股装机容量<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c67c8b764.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c67c8b764.png" alt="权益发电量"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>343</span>亿千瓦时</div>
-                                        <div class="hmpt2">权益发电量<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c50c4a070.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c50c4a070.png" alt="控股发电量"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>356</span>亿千瓦时</div>
-                                        <div class="hmpt2">控股发电量<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66ce02af684.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66ce02af684.png" alt="控股电厂供电煤耗"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>292</span>克/千瓦时</div>
-                                        <div class="hmpt2">控股电厂供电煤耗<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66ed70de169.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66ed70de169.png" alt="天然气经营规模"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>80.6</span>亿立方米</div>
-                                        <div class="hmpt2">天然气经营规模<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="swiper-slide">
-                            <table class="hmpart-item">
-                                <tr>
-                                    <td class="hmpimgs"><img src="Uploads/20180805/5b66c4a7b85b2.png" tppabs="http://www.shenergy.com.cn/Uploads//20180805/5b66c4a7b85b2.png" alt="燃气用户数"></td>
-                                    <td>
-                                        <div class="hmpt1"><span>680</span>万户</div>
-                                        <div class="hmpt2">燃气用户数<span>（2017年）</span></div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="hmywglpage"></div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="swiper-button-next"></div>-->
+        <!--<div class="swiper-button-prev"></div>-->
     </section>
 </div>
 
@@ -1907,6 +788,21 @@
         }
         //loop : true,
     })
+    var swiper = new Swiper('#sw', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 </script>
 <script>
     $(function(){
@@ -1923,40 +819,6 @@
     <div class="footer-top">
         <div class="container-lg container">
             <div class="row">
-                <div class="col-sm-2 ft-tleft clearfix">
-                    <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                        <div class="ft-logo">
-                            <a href="index.htm" tppabs="http://www.shenergy.com.cn/"><img src="Uploads/20181122/5bf65a0d376aa.png" tppabs="http://www.shenergy.com.cn/Uploads//20181122/5bf65a0d376aa.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                        <div class="ft-shart">
-                            <a href="#" class="ico-wb"></a>
-                            <a href="" class="ico-wx"></a>
-                        </div>
-                    </div>
-                    <div class="animatesv" amt="fadeInUpss" id="ftselect" style="animation-duration: 0.5s;animation-delay: 0.15s;">
-                        <div class="ft-select">
-                            <div class="ft-select-top"><span>主要投资企业</span><img src="./img/form_sub.jpg" tppabs="http://www.shenergy.com.cn/Application/Home/View/Static/Images/form_sub.jpg" onclick="$('.drop_list').toggle()" alt=""></div>
-                            <div class="ft-select-list">
-                                <div class="drop_list" style="display: none;">
-                                    <a target="_blank" href="javascript:if(confirm('http://www.shenergy.net.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shenergy.net.cn/'" tppabs="http://www.shenergy.net.cn/">申能股份有限公司</a>
-                                    <a target="_blank" href="javascript:if(confirm('http://www.shgas.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shgas.com.cn/'" tppabs="http://www.shgas.com.cn/">上海燃气（集团）有限公司</a>
-                                    <a target="_blank" href="javascript:if(confirm('http://www.dfzq.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.dfzq.com.cn/'" tppabs="http://www.dfzq.com.cn/">东方证券股份有限公司</a>
-                                    <a target="_blank" href="info/about4/id/981.htm" tppabs="http://www.shenergy.com.cn/info/about4/id/981">上海液化天然气有限责任公司 </a>
-                                    <a target="_blank" href="info/about4/tid/629.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/629">上海申能能源服务有限公司 </a>
-                                    <a target="_blank" href="info/about4/tid/630.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/630">上海申欣环保实业有限公司</a>
-                                    <a target="_blank" href="info/about4/tid/632.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/632">申能集团财务有限公司 </a>
-                                    <a target="_blank" href="info/about4/tid/631.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/631">上海久联集团有限公司</a>
-                                    <a target="_blank" href="javascript:if(confirm('http://www.icy-capital.com/icyMain.jsp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.icy-capital.com/icyMain.jsp'" tppabs="http://www.icy-capital.com/icyMain.jsp">上海申能诚毅股权投资有限公司</a>
-                                    <a target="_blank" href="javascript:if(confirm('http://www.sieic.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.sieic.org/'" tppabs="http://www.sieic.org/">上海申能能创能源发展有限公司</a>
-                                    <a target="_blank" href="info/about4/tid/648.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/648">上海港口能源有限公司</a>
-                                    <a target="_blank" href="javascript:if(confirm('http://www.cpic.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cpic.com.cn/'" tppabs="http://www.cpic.com.cn/">太平洋保险（集团）股份有限公司</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-sm-10">
                     <div class="ft-nav-wrap">
                         <div class="row">
@@ -2032,14 +894,69 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-2 ft-tleft clearfix">
+                    <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+                        <div class="ft-logo">
+                            <a href="index.htm"><img src="./img/footer_logo.png"  alt=""></a>
+                        </div>
+                    </div>
+                    <div class="animatesv" amt="fadeInUpss" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+                        <div class="ft-shart">
+
+                            <a href="" class="ico-wx" ></a>
+                        </div>
+                    </div>
+                    <div class="animatesv" amt="fadeInUpss" id="ftselect" style="animation-duration: 0.5s;animation-delay: 0.15s;">
+                        <div class="ft-select" style="width: 140px;">
+                            <div class="ft-select-top"><span style="color: #787878;">直属企业</span><img src="./img/arrow-top.png"  onclick="$('.list0').toggle()" alt=""></div>
+                            <div class="ft-select-list">
+                                <div class="drop_list list0" style="display: none;">
+                                    <a target="_blank" href="javascript:if(confirm('http://www.shenergy.net.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shenergy.net.cn/'" tppabs="http://www.shenergy.net.cn/">申能股份有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.shgas.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shgas.com.cn/'" tppabs="http://www.shgas.com.cn/">上海燃气（集团）有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.dfzq.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.dfzq.com.cn/'" tppabs="http://www.dfzq.com.cn/">东方证券股份有限公司</a>
+                                    <a target="_blank" href="info/about4/id/981.htm" tppabs="http://www.shenergy.com.cn/info/about4/id/981">上海液化天然气有限责任公司 </a>
+                                    <a target="_blank" href="info/about4/tid/629.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/629">上海申能能源服务有限公司 </a>
+                                    <a target="_blank" href="info/about4/tid/630.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/630">上海申欣环保实业有限公司</a>
+                                    <a target="_blank" href="info/about4/tid/632.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/632">申能集团财务有限公司 </a>
+                                    <a target="_blank" href="info/about4/tid/631.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/631">上海久联集团有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.icy-capital.com/icyMain.jsp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.icy-capital.com/icyMain.jsp'" tppabs="http://www.icy-capital.com/icyMain.jsp">上海申能诚毅股权投资有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.sieic.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.sieic.org/'" tppabs="http://www.sieic.org/">上海申能能创能源发展有限公司</a>
+                                    <a target="_blank" href="info/about4/tid/648.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/648">上海港口能源有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.cpic.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cpic.com.cn/'" tppabs="http://www.cpic.com.cn/">太平洋保险（集团）股份有限公司</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ft-select" style="margin-top: 40px;width: 140px;">
+                            <div class="ft-select-top"><span style="color: #787878;">直属企业</span><img src="./img/arrow-top.png" onclick="$('.list1').toggle()" alt=""></div>
+                            <div class="ft-select-list">
+                                <div class="drop_list list1" style="display: none;">
+                                    <a target="_blank" href="javascript:if(confirm('http://www.shenergy.net.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shenergy.net.cn/'" tppabs="http://www.shenergy.net.cn/">申能股份有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.shgas.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.shgas.com.cn/'" tppabs="http://www.shgas.com.cn/">上海燃气（集团）有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.dfzq.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.dfzq.com.cn/'" tppabs="http://www.dfzq.com.cn/">东方证券股份有限公司</a>
+                                    <a target="_blank" href="info/about4/id/981.htm" tppabs="http://www.shenergy.com.cn/info/about4/id/981">上海液化天然气有限责任公司 </a>
+                                    <a target="_blank" href="info/about4/tid/629.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/629">上海申能能源服务有限公司 </a>
+                                    <a target="_blank" href="info/about4/tid/630.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/630">上海申欣环保实业有限公司</a>
+                                    <a target="_blank" href="info/about4/tid/632.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/632">申能集团财务有限公司 </a>
+                                    <a target="_blank" href="info/about4/tid/631.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/631">上海久联集团有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.icy-capital.com/icyMain.jsp  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.icy-capital.com/icyMain.jsp'" tppabs="http://www.icy-capital.com/icyMain.jsp">上海申能诚毅股权投资有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.sieic.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.sieic.org/'" tppabs="http://www.sieic.org/">上海申能能创能源发展有限公司</a>
+                                    <a target="_blank" href="info/about4/tid/648.htm" tppabs="http://www.shenergy.com.cn/info/about4/tid/648">上海港口能源有限公司</a>
+                                    <a target="_blank" href="javascript:if(confirm('http://www.cpic.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cpic.com.cn/'" tppabs="http://www.cpic.com.cn/">太平洋保险（集团）股份有限公司</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
     <!--// visible-xs-block hidden-xs-->
-    <div class="icp">Copyright @ 2017久事集团 All Right Reserved</div>
-    <!--<div class="icp "><br>沪公网安备 31010102002339号</div>-->
-    <div class="icp"><br>沪公网安备 31010102002339号</div>
+    <div class="icp">
+        <b class="col-lg-6 col-xs-12 " style="float:left;font-weight: initial">Copyright @ 2017久事集团 All Right Reserved</b>
+        <b class="col-lg-6 col-xs-12 " style="float:right;font-weight: initial">沪公网安备 31010102002339号</b>
+    </div>
 </div>
 
 </body>
