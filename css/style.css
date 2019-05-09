@@ -687,24 +687,13 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
     height: 60px;
 }
 
+
 /* innermain */
 .inner-main{
     padding-bottom: 0px;
 }
-.inner-main .title-s1{margin-bottom:45px;}
-.locationmc{margin-bottom:45px;padding-bottom:15px;border-bottom:1px solid #dfdfdf;position:relative;padding-left:8px;}
-.locationmc:after{
-    display:block;
-    width: 0;
-    height: 0;
-    border-left:5px solid #f00;
-    border-top:4px solid transparent;
-    border-bottom:4px solid transparent;
-    content:'';
-    position:absolute;
-    top:5px;
-    left:0;
-}
+.inner-main .title-s1{margin-top:20px;margin-bottom: 20px}
+.locationmc{border-bottom:1px solid #dfdfdf;position:relative;padding-left:8px;}
 .locationmc span{margin:0 4px;}
 .inner-tabs{
     background:url("../Images/ico_tab.jpg")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_tab.jpg*/ repeat;
@@ -712,7 +701,6 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
     border-bottom:1px solid #dfdfdf;
     text-align:center;
     font-size:0;
-    margin-bottom:25px;
 }
 .inner-tabs a{
     font-size:16px;
@@ -722,7 +710,8 @@ h4 .bann-move-p:before{animation-delay:1.2s;}
     border-bottom:5px solid transparent;
     margin:0 65px -3px;
 }
-.inner-tabs a.active{border-bottom-color:#e60012;}
+.inner-tabs a.active{border-bottom-color:#e60012;color: #e60012;
+    font-weight: bold;}
 .title-line2 span.ar{width:40px;margin: 0;}
 .title-line2 span.al{margin:0 10px;}
 .kjcxswp{margin-top:90px;position:relative;}
@@ -932,6 +921,7 @@ display:block;
     height: 48px;
     overflow: hidden;
 }
+.workHeader div{display: inline-block;border: 1px solid #999999;}
 /* .news-item:hover {
     background: #3bb3c3;
     color: #fff;
@@ -949,19 +939,25 @@ display:block;
 .xxpl ul li{
     padding:15px 15px  15px 32px;
     position:relative;
-    border-bottom:1px dashed #ccc;
+    /*border-bottom:1px dashed #ccc;*/
+    background-color: #f2f2f2;
+    margin-bottom: 4px;
 }
-.xxpl ul li:after{
-    display:block;
-    width:5px;
-    height:5px;
-    background:#e60012;
-    content:'';
-    position:absolute;
-    left:18px;
-    top:50%;
-    margin-top:-3px;
-    z-index:2;
+.xxpl ul li.bawh{
+    padding:15px 15px  15px 32px;
+    position:relative;
+    /*border-bottom:1px dashed #ccc;*/
+    background-color: #ffffff;
+}
+.rad{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background:#9a9b9b;
+    margin-right: 14px;
 }
 .xxpl ul li a{color:#4a4a4a;}
 .xxpl-data{float:right;color:#4a4a4a;}
@@ -983,12 +979,13 @@ display:block;
     -webkit-box-orient: vertical;
     overflow:hidden;
 }
-
 .ban-txt-s2{position:absolute;bottom:85px;left:0;z-index:2;width:100%;}
 .ban-ld-txt{background:rgba(0,0,0,0.74);font-size:18px;color:#fff;width:55.5%;padding:45px 70px;line-height: 30px;}
 .ban-ld-txt a{color:#fff;}
 .news-boxs,.xxpl ul li{-webkit-transition:all 0.3s;transition:all 0.3s;}
-.news-boxs:hover,.xxpl ul li:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px);}
+.news-boxs:hover,.xxpl ul li:hover{-webkit-transform:scale(1.007);transform:scale(1.007);-webkit-box-shadow: #666 0px 0px 6px;-moz-box-shadow: #666 0px 0px 6px;box-shadow: #666 0px 0px 6px; }
+.xxpl ul li:hover a,.xxpl ul li:hover span,.xxpl ul li:hover {color: #e60012;font-weight: bold}
+.xxpl ul li:hover .rad{background-color: #e60012;}
 
 .text{text-align:justify;}
 .text,.text p,.text span,.text div,.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{
@@ -1788,3 +1785,5 @@ video::-webkit-media-controls-enclosure {overflow:hidden;}video::-webkit-media-c
 }
 .activeHead .head-sea{background:url("../Images/ico_sea2.png")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_sea2.png*/; }
 .navbar-nav > li .head-sea:hover{background:url("../Images/ico_sea3.png")/*tpa=http://www.shenergy.com.cn/Application/Home/View/Static/Images/ico_sea3.png*/!important;}
+
+/*党建工作*/

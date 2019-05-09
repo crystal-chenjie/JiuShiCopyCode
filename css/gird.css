@@ -97,6 +97,7 @@
 	.news-item-group{margin-bottom:0;}
 	.news-right-mob .news-item{border-top:0;height:auto;margin-bottom:15px;}
 	.news-right-mob .news-item .news-rtxt-mob h3{font-size:18px;margin-top:0;}
+	.news-right-mob .news-item:hover h3{font-size:18px;margin-top:0;font-weight: bold}
 	.ndata-mob{color:#888;font-family:Arial;}
 	.locationmc{margin-bottom: 25px;}
 	.pages{margin:25px auto;}
