@@ -921,7 +921,7 @@ display:block;
     height: 48px;
     overflow: hidden;
 }
-.workHeader div{display: inline-block;border: 1px solid #999999;}
+.workHeader div{display: inline-block;border: 1px solid #dad7d7;}
 /* .news-item:hover {
     background: #3bb3c3;
     color: #fff;
